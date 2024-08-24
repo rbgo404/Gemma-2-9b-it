@@ -23,11 +23,11 @@ INPUT_SCHEMA = {
         'shape': [1],
         'example': [1.18]
     },
-    "max_tokens": {
+    "max_new_tokens": {
         'datatype': 'INT16',
         'required': False,
         'shape': [1],
-        'example': [512]
+        'example': [128]
     },
     "top_k":{
         'datatype': 'INT8',
