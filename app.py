@@ -12,7 +12,7 @@ class InferlessPythonModel:
         temperature = inputs.get("temperature", 0.7)
         top_p = inputs.get("top_p", 0.1)
         top_k = inputs.get("top_k", 40)
-        repetition_penalty = inputs.get("repetition_penalty", 1.18)
+        repetition_penalty = float(inputs.get("repetition_penalty", 1.18))
         max_new_tokens = inputs.get("max_new_tokens", 256)
       
         messages = [{"role": "user", "content": prompt}]
