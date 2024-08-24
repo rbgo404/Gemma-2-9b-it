@@ -1,5 +1,5 @@
-# Model Template - Deploy Gemma-2-2b-it using Inferless
-Gemma-2-2b-it is an open-source AI language model developed by Google. It's designed to be efficient and lightweight, making it suitable for various natural language processing tasks on resource-constrained devices.
+# Model Template - Deploy Gemma-2-9b-it using Inferless
+Gemma-2-9b-it is an open-source AI language model developed by Google. It's designed to be efficient and lightweight, making it suitable for various natural language processing tasks on resource-constrained devices.
 
 ### Fork the Repository
 Get started by forking the repository. You can do this by clicking on the fork button in the top right corner of the repository page.
