@@ -90,7 +90,7 @@ def infer(self, inputs):
     top_p = inputs.get("top_p", 0.1)
     top_k = inputs.get("top_k", 40)
     repetition_penalty = inputs.get("repetition_penalty", 1.18)
-    max_tokens = inputs.get("max_tokens", 256)```
+    max_new_tokens = inputs.get("max_new_tokens", 256)```
 
 **Finalize** - This function is used to perform any cleanup activity for example you can unload the model from the gpu by setting to `None`.
 ```python
