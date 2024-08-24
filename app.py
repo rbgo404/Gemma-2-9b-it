@@ -13,14 +13,14 @@ class InferlessPythonModel:
         top_p = inputs.get("top_p", 0.1)
         top_k = inputs.get("top_k", 40)
         repetition_penalty = inputs.get("repetition_penalty", 1.18)
-        max_tokens = inputs.get("max_tokens", 256)
+        max_new_tokens = inputs.get("max_new_tokens", 256)
       
         messages = [{"role": "user", "content": prompt}]
         input_ids = self.tokenizer.apply_chat_template(messages, return_tensors="pt", return_dict=True).to("cuda")
       
         outputs = self.model.generate(
             **input_ids, 
-            max_new_tokens=max_tokens, 
+            max_new_tokens=max_new_tokens, 
             temperature=temperature, 
             top_p=top_p, 
             top_k=top_k, 
