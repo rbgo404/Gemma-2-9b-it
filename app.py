@@ -5,7 +5,7 @@ class InferlessPythonModel:
     def initialize(self):
         model_name = "google/gemma-2-9b-it"
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForCausalLM.from_pretrained(model_name,torch_dtype=torch.bfloat16).to("cuda")
+        self.model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.bfloat16, device_map="cuda")
 
     def infer(self, inputs):
         prompt = inputs["prompt"]
